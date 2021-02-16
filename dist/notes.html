@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serdar's Notes</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="notes.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    
+    <!-- HEADER -->
+    <header>
+    <div class="container">
+        <a href="./index.html">
+            <div class="logo">
+                <img src="./images/serdar_kuyuk_closer.jpeg" alt="">
+                <div class="name">
+                    <span>H. Serdar</span>
+                    <span>KUYUK</span>
+                </div>
+            </div>
+        </a>
+        <div class="social">
+            <a href="email:serdarkuyuk@gmail.com">
+                <img src="./images/email.jpeg" alt="email">
+            </a>
+            <a href="https://github.com/serdarkuyuk">
+                <img src="./images/github.jpeg" alt="github">
+            </a>
+            <a href="https://www.linkedin.com/in/serdarkuyuk/">
+                <img src="./images/linkedin.jpeg" alt="linkedin">
+            </a>
+            <a href="https://twitter.com/serdarkuyuk">
+                <img src="./images/twitter.jpeg" alt="twitter">
+            </a>
+        </div>
+
+        <nav class="navbar">
+            <ul id="outer">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./projects.html">Projects</a></li>
+                <li><a href="./notes.html">Notes</a></li>
+                <li><a href="./publications.html">Pubs</a></li>
+                <li><a href="./aboutme.html">About</a></li>
+                <li><a href="./contactme.html">Contact</a></li>
+             </ul>  
+        </nav>
+    </div>
+</header>
+
+
+
+
+
+    <!-- MAIN AREA -->
+    <section class="main">
+       <div class="general-container">
+
+        <a href="https://github.com/serdarkuyuk/Notes" target="_blank" style="margin:30px 0; text-align:center;">Go to my github repo to see my notes.</a>
+
+        <!-- <iframe src="https://github.com/serdarkuyuk/Notes" style="margin-top:50px;height:100vh;width:100%;" title="Notes"></iframe> -->
+
+        <!-- <iframe id="github-iframe" src=""></iframe>
+        <script>
+            fetch('https://api.github.com/repos/ileathan/hubot-mubot/contents/src/mubot.coffee')
+                .then(function(response) {
+                    return response.json();
+                }).then(function(data) {
+                    var iframe = document.getElementById('github-iframe');
+                    iframe.src = 'data:text/html;base64,' + encodeURIComponent(data['content']);
+                });
+        </script> -->
+
+       </div>
+    </section> 
+
+    <!--FOOTER-->
+    <section class="footer">
+    <div class="container">
+        <p>© Copyright 2021, All rights reserved.</p>
+    </div>
+</section>
+
+    <!-- SCRIPTS -->
+    <script src="index.js"></script>
+    <script>handleUnderLine();</script>
+</body>
+</html>

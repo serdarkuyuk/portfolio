@@ -1,0 +1,251 @@
+/* HEADER */
+
+header {
+    margin-top: 10px;
+    letter-spacing: 1px;
+    
+    /* border: 1px solid; */
+
+    display: grid;
+    place-items: center;
+}
+
+@media only screen and (min-width: 740px) {
+    header {
+        margin-top: 20px;
+        letter-spacing: 2px;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    header {
+        letter-spacing: 3px;
+    }
+}
+
+/* HEADER CONTAINER */
+
+header .container {
+    width: 100%;
+    max-width: var(--max-width);
+    padding: var(--padding-left-small);
+    color: var(--primary-color);
+
+    /* border: 1px dashed blue; */
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+}
+
+@media only screen and (min-width: 740px) {
+    header .container {
+        padding: var(--padding-left-medium);
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    header .container {
+        padding: var(--padding-left-large);
+    }
+}
+
+/* HEADER LOGO */
+
+header .container > a {
+    color: var(--primary-color);
+    text-decoration: none;
+    text-transform: uppercase;
+
+    /* border: 1px dashed purple; */
+
+    place-self: start start;
+}
+
+header .logo img {
+    width: 120px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+
+}
+
+header .logo {
+    text-transform: uppercase;
+    font-size: .85rem;
+    font-weight: 600;
+    cursor: pointer;
+
+    /* border: 1px dashed red; */
+
+    display: flex;
+    flex-direction: column;
+}
+
+header .name {
+    display: flex;
+    /* border: 1px dashed; */
+}
+
+header .name span:first-child {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1px 5px;
+    margin-right: 5px;
+}
+
+@media only screen and (min-width: 740px) {
+    header .logo {
+        font-size: 1rem;
+    }
+
+    header .logo img {
+        width: 165px;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    header .logo {
+        font-size: 1.1rem;
+    }
+
+    header .logo img {
+        width: 190px;
+    }
+}
+
+/* HEADER SOCIAL */
+
+header .social {
+    /* border: 1px solid purple; */
+    height: 80px;
+    width: 80px;
+
+    place-self: start end;
+
+    position: relative;
+}
+
+header .social img {
+    width: 30px;
+    height: 30px;
+}
+
+header .social a:nth-child(2) img {
+    transform: scale(1.25);
+    transform-origin: 70% 70%;
+}
+
+header .social a {position: absolute;}
+header .social a:nth-child(1) {top:0;left:0;}
+header .social a:nth-child(2) {top:0;right:0;}
+header .social a:nth-child(3) {bottom:0;right:0;}
+header .social a:nth-child(4) {bottom:0;left:0;}
+
+/* Middle devices */
+@media only screen and (min-width: 740px) {
+    header .social {
+        height: 100px;
+        width: 100px;
+    }
+    header .social img {
+        width: 35px;
+        height: 35px;
+    }
+
+} 
+
+/* Large devices */
+@media only screen and (min-width: 1280px) {
+    header .social {
+        height: 120px;
+        width: 120px;
+    }
+
+    header .social img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+
+/* HEADER NAVBAR */
+
+.navbar {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: black;
+
+    /* border: 1px dashed blue;  */
+
+    grid-column: 1 / -1;
+}
+
+.navbar #outer {
+    width: 100%;
+    list-style: none;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar #outer > li {
+    display: flex;
+    align-items: center;
+    /* border: 1px dashed blue;  */
+}
+
+.underlined {    
+    border-bottom: 1px solid var(--primary-color);
+}
+
+
+.navbar a {
+    color: var(--primary-color);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: .7rem;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+
+    /* border: 1px dashed black;  */
+}
+
+.navbar a:hover {
+    background-color: rgba(30, 39, 61, 0.98);
+    color: white;
+    transition: all 0.2s ease-in;
+}
+
+
+/* Very Small devices */
+@media only screen and (max-width: 480px) {
+
+} 
+
+/* Small devices */
+@media only screen and (min-width: 480px) {
+    .navbar a {
+        font-size: 1rem;
+    }
+} 
+
+/* Middle devices */
+@media only screen and (min-width: 740px) {
+    .navbar a {
+        font-size: 1.1rem;
+    }
+} 
+
+/* Large devices */
+@media only screen and (min-width: 1280px) {
+    .navbar {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    
+    .navbar a {
+        font-size: 1.2rem;
+    }
+}
