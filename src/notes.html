@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serdar's Notes</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="notes.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    
+    <!-- HEADER -->
+    ${require('./_header.html')}
+
+
+    <!-- MAIN AREA -->
+    <section class="main">
+       <div class="general-container">
+
+        <a href="https://github.com/serdarkuyuk/Notes" target="_blank" style="margin:30px 0; text-align:center;">Go to my github repo to see my notes.</a>
+
+        <!-- <iframe src="https://github.com/serdarkuyuk/Notes" style="margin-top:50px;height:100vh;width:100%;" title="Notes"></iframe> -->
+
+        <!-- <iframe id="github-iframe" src=""></iframe>
+        <script>
+            fetch('https://api.github.com/repos/ileathan/hubot-mubot/contents/src/mubot.coffee')
+                .then(function(response) {
+                    return response.json();
+                }).then(function(data) {
+                    var iframe = document.getElementById('github-iframe');
+                    iframe.src = 'data:text/html;base64,' + encodeURIComponent(data['content']);
+                });
+        </script> -->
+
+       </div>
+    </section> 
+
+    <!--FOOTER-->
+    ${require('./_footer.html')}
+
+    <!-- SCRIPTS -->
+    <script src="index.js"></script>
+    <script>handleUnderLine();</script>
+</body>
+</html>

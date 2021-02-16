@@ -1,0 +1,32 @@
+@import url(./global.css);
+@import url(./hero.css);
+
+body {
+    height: calc(100vh - 75px);
+
+    display: flex;
+    flex-direction: column;
+
+    /* border: 1px solid purple; */
+}
+
+@media only screen and (min-width: 1280px) {
+    body {
+        height: calc(100vh - 95px);
+    }
+}
+
+.hero {
+    flex-grow: 1;
+}
+
+.hero .general-container{
+    align-self: center;
+}
+
+.footer {
+    position: fixed;
+    position: -webkit-fixed; /* Safari */ 
+    bottom: 0;
+    width: 100%;
+}

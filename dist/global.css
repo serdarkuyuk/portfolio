@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;0,900;1,400;1,600&display=swap');
+
+@import url(./header.css);
+@import url(./footer.css);
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --padding-left-small: 0 24px;
+    --padding-left-medium: 0 48px;
+    --padding-left-large: 0 110px;
+
+    --background-color: white;
+    --primary-color: rgb(36, 41, 67);
+    --secondary-color: #9BF2FF;
+    --complementary-color: rgb(236, 142, 35);
+    --third-color: rgb(59, 84, 196);
+
+    --max-width: 1540px;
+}
+
+body {
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+}
+
+/* UTILITY CLASSES */
+
+.vertical-spacer {
+    display: block;
+    height: 1rem;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* GENERAL CONTAINER */
+
+.general-container {
+    width: 100%;
+    max-width: var(--max-width);
+    color: var(--primary-color);
+
+    /* border: 2px dashed blue; */
+
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 740px) {
+    .general-container {
+        padding: var(--padding-left-small);
+    }
+}
+
+@media only screen and (min-width: 740px) {
+    .general-container {
+        padding: var(--padding-left-medium);
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .general-container {
+        padding: var(--padding-left-large);
+    }
+}

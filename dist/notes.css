@@ -1,0 +1,8 @@
+@import url(./global.css);
+
+.footer {
+    position: fixed;
+    position: -webkit-fixed; /* Safari */ 
+    bottom: 0;
+    width: 100%;
+}
